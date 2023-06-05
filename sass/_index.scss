@@ -1,0 +1,325 @@
+// index
+@mixin text-aling-center{
+    text-align: center;
+}
+@mixin d-flex-aling-items-center{
+    display: flex;
+    align-items: center;
+}
+@mixin d-flex-center-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+            //NAVBAR 
+#header{
+    grid-area: header;
+}
+
+.navbar{
+    background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(34,34,34,1) 50%, rgba(0,0,0,1) 100%);
+    .navbar_container{
+        padding: 20px;
+    }
+    li{
+        @include d-flex-aling-items-center;
+        font-size: 18px;
+        margin-left: 110px;
+        font-style: oblique;
+        font-weight: bold;
+    }
+    a{
+        color: white;
+    }
+    li:hover{
+        background-color: rgb(51, 51, 51);
+        border-radius: 8px;
+    }
+}
+.colorbtn{
+    background-color: whitesmoke;
+}
+
+            // MAIN
+#main{
+    grid-area: main;
+    margin-top: 120px;
+    height: 45vh;
+    background-image: url(https://wallpapercave.com/wp/wp3172291.jpg);
+    @include text-aling-center;
+    .main_section{
+        width: 100%;
+        height: 100%;
+    }
+    
+    @keyframes shadow-drop-2-center{0%{transform:translateZ(0);box-shadow:0 0 0 0 transparent}100%{transform:translateZ(50px);box-shadow:0 0 20px 0 rgba(0,0,0,.35)}}
+    h1{
+        display: inline;
+        color: white;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: rgb(35, 35, 35);
+    }
+}
+.img_medio{
+    animation:shadow-drop-2-center .4s cubic-bezier(.25,.46,.45,.94) both;
+    border-radius: 50%;
+    margin-top: 60px;
+    height: 240px;
+    width: 240px;
+    margin-bottom: 10px;
+
+}
+            //SECTION2 
+.main_section{
+    height: 45vh;
+    background: rgb(2,0,29);
+    background: linear-gradient(90deg, rgba(2,0,29,1) 0%, rgba(10,10,48,1) 50%, rgba(9,9,28,1) 100%);
+    .flex{
+        height: 100%;
+        width: 100%;
+        @include d-flex-aling-items-center;
+    }   
+        .img_sobremi{
+            height: 300px;
+            width: 300px;
+            margin-left: 30px;
+            border-radius: 10px;
+        }
+}
+.info{
+    grid-area: texto;
+    color: white;
+    font-size: 1.5rem;
+    padding: 50px;
+    text-align: start
+}
+.tex2{
+    position: relative;
+    bottom: 100px;
+    right: 40px;
+}
+.click{
+    padding: 5px;
+}
+    .click:hover{
+    background-color: rgb(14, 10, 53);
+    border-radius: 10px;
+}
+.texto2{
+    color: white;
+    margin-bottom: 0;
+    text-align: end;
+    font-size: 1.5rem;
+}
+a{
+    text-decoration: none;
+}
+// seccion 2
+.section_masinfo{
+    height: 70vh;
+    background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,2,5,1) 0%, rgb(7, 7, 48) 100%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+            // FOOTER
+.footer{
+    height: 100%;
+    width: 50%;
+    @include d-flex-center-center;
+    @include text-aling-center;
+}
+#footer{
+    grid-area: footer;
+    height: 35vh;
+    width: 100%;
+    display: flex;
+    background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(34,34,34,1) 50%, rgba(0,0,0,1) 100%);
+    .h3{
+        width: 100%;
+        color: rgb(122, 122, 122);
+    }
+    
+        a{
+            color: white
+        }
+        a:hover{
+            background-color: rgb(51, 51, 51);
+            color: black;
+            border-radius: 3px;
+            padding: 3px;
+        }
+    }
+    .sitemap_container{
+        @extend .footer;
+    }
+    .contacto{
+        @extend .footer;
+    }
+    
+    .card-title {
+        color: white;
+    }
+    .card-text{
+        font-size: 17px;
+        color: whitesmoke;
+        text-align: start;
+    }
+.p_footer{
+    width: 550px;
+    position: absolute;
+    left: 675px;
+    top: 1270px;
+    color: #7f7f7f;
+    font-weight: bold;
+    text-align: center;
+}
+li{
+    text-decoration: none;
+    list-style: none;
+    margin: 10px;
+    font-style: oblique;
+    font-weight: bold;
+}
+/* ———– Laptops ———– */
+
+@media only screen
+and (min-device-width: 1200px)
+and (max-device-width: 1600px){
+.img_medio{
+    margin-top: 20px;
+}
+}
+
+/* ———– Tablets ———– */
+@media only screen
+and (max-device-width: 1024px){
+    .navbar{
+        .nav-item{
+        margin-left: 0;
+        }
+}
+    .img_medio{
+        margin: 27px 0 0 0 ;
+    }
+    .info{
+        font-size: 1.3rem;
+    }
+    .texto2{
+        font-size: 1.1rem;
+        margin-top: 35px;
+    }
+}
+@media only screen
+and (max-device-width: 768px){
+    .img_medio{
+        margin-top: 65px;
+    }
+    .info{
+        font-size: 1.1rem;
+    }
+    .texto2{
+        font-size: 1rem;
+    }
+    .section_masinfo{
+        display: none;
+    }
+}
+@media only screen and (max-device-width: 425px){
+    #footer{
+        justify-content: center;
+    }
+    
+    .main_section{
+    height: 90vh;
+    }
+    .main_section .flex{
+    flex-direction: column;
+    }
+    .img_sobremi{
+    margin-top: 40px ;
+    }
+    ul{
+        margin: 0;
+        padding: 0;
+    }
+    .contacto{
+        margin: 0;
+    }
+    .sitemap_container{
+        margin: 0;
+    }
+    li{
+        font-size: 14px;
+    }
+}
+@media only screen and (max-device-width: 390px){
+        
+    .tex2{
+        display: none;
+    }
+    ul li{
+        margin-top: 3px; 
+        font-size: 11px;
+        }
+}
+@media only screen and (max-device-width: 375px){
+        #main{
+            margin-top: 170px;
+        }
+    .img_medio{
+            margin-top: 10px;
+        }
+        .tex2{
+            display: none;
+        }
+        ul li{
+            margin-top: 3px; 
+            font-size: 11px;
+            }
+    }
+    /* index */
+    @media only screen and (max-device-width: 325px){
+        #main{
+        height: 50vh;
+        margin-top: 177px;
+        }
+        .main_section{
+        height: 60vh;
+        }
+        .img_medio{
+        margin: 20px 0;
+        }
+        .img_sobremi{
+        display: none;
+        }
+        .tex2{
+        display: flex;
+        margin: 0;
+        text-align: center;
+        }
+        ul li{
+        margin-top: 3px; 
+        font-size: 11px;
+        }
+        .contacto{
+            margin: 0;
+        }
+        .sitemap_container{
+            margin: 0;
+        }
+        .click{
+        text-align: center;
+        }
+        .tex2{
+        display: none;
+        }
+        #footer{
+        height: 50vh;
+        }
+    }

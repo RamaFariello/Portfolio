@@ -1,0 +1,370 @@
+// sobre mi
+.grid_conteiner_sobremi{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+.h1-s{
+    color: white;
+    text-align: center;
+    background-color: blue;
+    margin-bottom: 20px;
+}
+#main_sobremi{
+    height: 230vh;
+    margin-top: 121px;
+    background: rgb(0,0,0);
+background: linear-gradient(149deg, rgba(0,0,0,1) 0%, rgba(0,8,46,1) 100%);
+    .article_sobremi{
+        height: 90vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .texto-presentacion{
+        width: 50%;
+    }
+    .color-blue{
+        background-color: blue;
+    }
+    .sobremi_texto_container{
+        width: 50%;
+    }
+}
+.h1_sobremi{
+    font-size: 1.4rem;
+    color: white;
+    margin: 30px;
+    text-align: start;
+}
+.media{
+    width:600px; 
+    height:400px; 
+}
+.article_sobremi_ing{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    .h2_sobremi{
+        font-size: 1.7rem;
+        color: white;
+        text-align: center;
+        background-color: blue;
+    }
+}
+.p_ing{
+    font-size: 1.3rem;
+    margin: 70px;
+    color: white;
+    text-align: start;
+    padding: 10px;
+}
+.img_container_ing{
+    height: 100%;
+}
+.ing_en_informatica{
+    height: 400px;
+    width: 600px;
+    border-radius: 20px;
+    margin: 70px;
+}
+.article_hobby{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+    .hobby_sobremi{
+        height: 55vh;
+        
+    }
+    .hobby_text_container{
+        width: 50%;
+        .h3_hobby{
+            font-size: 1.7rem;
+            color: white;
+            background-color: blue;
+            text-align: center;
+        }
+    }
+    .p_hobby{
+        font-size: 1.3rem;
+        margin: 100px;
+        color: white;
+        text-align: start;
+        padding: 10px;
+    }
+/* ———– Laptops ———– */
+@media only screen and (max-device-width: 1600px){
+    #main_sobremi{
+        height: 220vh;
+    }
+    
+    .article_sobremi{
+        padding: 0;
+    }
+    .article_sobremi_ing{
+        height: 60vh ;
+    }
+    .p_ing{
+        margin: 5px;
+    }
+    .article_hobby{
+        margin-top: 90px;
+    }
+    .hobby_sobremi{
+        margin-top: 10px;
+    }
+    .p_hobby{
+        margin: 40px;
+    }
+}
+@media only screen and (max-device-width: 1200px){
+    #main_sobremi{
+        height: 220vh;
+    }.article_sobremi{
+        padding: 0;
+    }
+    .article_sobremi_ing{
+        height: 60vh ;
+    }
+    .article_hobby{
+        margin-top: 90px;
+    }
+    .hobby_sobremi{
+        margin-top: 10px;
+    }
+    .p_hobby{
+        margin: 40px;
+        font-size: 1.08rem;
+    }
+    .p_ing{
+        margin: 5px;
+        font-size: 1.08rem;
+    }
+}
+
+/* ———– Tablets ———– */
+@media only screen
+and (max-device-width: 1024px){
+    .media{
+        width: 500px;
+        height: 300px;
+    }
+    .ing_en_informatica{
+        height: 300px;
+        width: 500px;
+        margin:80px  20px 20px 20px;
+        
+    }
+    .p_ing{
+        padding: 20px;
+        margin: 30px 0 0 0;
+        font-size: 1rem;
+    }
+    .p_hobby{
+        margin: 10px;
+        font-size: 1rem;
+    }
+    .hobby_text_container{
+        padding: 15px;
+    }
+}
+@media only screen
+and (max-device-width: 768px){
+    #main_sobremi{
+        height: 360vh;
+    }
+    .h1_sobremi{
+        margin: 110px 0 0 0;
+        font-size: 1.3rem;
+    }
+    .article_sobremi{
+        flex-direction: column;
+    }
+    .article_sobremi_ing{
+        height: 85vh;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 300px;
+    }
+    .article_hobby{
+        flex-direction: column;
+        margin-top: 535px;
+    }
+    .ing_en_informatica{
+        margin-top: 20px;
+    }
+    .p_ing{
+        font-size: 1.2em;
+        margin: 0;
+        padding: 0;
+    }
+    .p_hobby{
+        font-size: 1.2em;
+    }
+
+}
+    /* sobre mi */
+        @media only screen and (max-device-width: 425px){
+            #main_sobremi{
+                height: 190vh;
+            }
+            .main_section_sobremi{
+                display: none;
+            }
+            .h1_sobremi{
+                display: none;
+            }
+            .article_sobremi_ing{
+                display: none;
+            }
+            .article_hobby{
+                display: none;
+            }
+            li.li_footer{
+                margin: 0;
+            }
+            .h1-s{
+                margin-top: 120px;
+                margin-bottom: 0;
+            }
+            h1.h1_sobremi-mb{
+                margin: 10px;
+            }
+            .cards{
+                margin: 0;
+            }
+            .vermas{
+                padding: 9px;
+            }
+            .card-body{
+                color: white;
+                padding: 15px;
+                font-size: 1.2rem;
+            }
+                .h1_sobremi-mb{
+                font-size: 1.3rem;
+                color: white;
+                padding: 25px;
+                margin-top: 177px;
+                margin-bottom: 40px;
+                }
+                .p_ing-mb{
+                font-size: 1.2rem;
+                color: white;
+                text-align: start;
+                padding: 20px;
+                margin-bottom: 0;
+                }
+                .h2_sobremi-mb{
+                    background-color: blue;
+                }
+                .h3_hobby-mb{
+                    text-align: center;
+                    color: white;
+                    background-color: blue;
+                }
+                .p_hobby-mb{
+                font-size: 1.2rem;
+                margin: 0;
+                color: white;
+                text-align: start;
+                padding: 20px;
+                }
+                .tv_container{
+                display: none;
+                }
+                .img_container_ing{
+                    display: none;
+                }
+                .maps{
+                display: none;
+                }
+                .card2{
+                    width: 400px;
+                }
+            }
+        @media only screen and (max-device-width: 390px){
+                #main_sobremi{
+                    height: 210vh;
+                }
+                .article_sobremi{
+                    display: none;
+                }
+                .h1_sobremi{
+                    font-size: 18px;
+                }
+                .sobremi_texto_container{
+                    display: none;
+                    margin-top: 370px;
+                }
+                .hobby_text_container{
+                    margin-top: 550px;
+                }
+                .p_ing{
+                    font-size: 16px;
+                    margin-top: 120px;
+                    }
+                .p_hobby{
+                    font-size: 16px;
+                }
+                .card2{
+                    width: 370px;
+                }
+            }
+    @media only screen and (max-device-width: 375px){
+        #main_sobremi{
+            height: 200vh;
+        }
+        .h1_sobremi{
+            font-size: 18px;
+        }
+        .sobremi_texto_container{
+            margin-top: 370px;
+        }
+        .hobby_text_container{
+            margin-top: 550px;
+        }
+        .p_ing{
+            font-size: 16px;
+            margin-top: 120px;
+            }
+        .p_hobby{
+            font-size: 16px;
+        }
+        .card2{
+            width: 350px;
+        }
+    }
+    @media only screen and (max-device-width: 325px){
+        #main_sobremi{
+            height: 230vh;
+        }
+        .h1_sobremi{
+            font-size: 18px;
+        }
+        .sobremi_texto_container{
+            margin-top: 370px;
+        }
+        .hobby_text_container{
+            margin-top: 550px;
+        }
+        .p_ing{
+            font-size: 16px;
+            margin-top: 120px;
+            }
+        .p_hobby{
+            font-size: 16px;
+        }
+        .card2{
+            width: 300px;
+        }
+    }
+
